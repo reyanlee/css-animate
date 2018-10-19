@@ -1,0 +1,51 @@
+#rotate {
+	transform: rotate(45deg);
+}
+
+#skew {
+	transform: skew(10deg);
+}
+
+#all {
+	transform: rotate(45deg);
+	transform: skew(170deg);
+}
+
+@keyframes o {
+	0% {
+		opacity: 0.1;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0.1;
+	}
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+
+}
+
+#animate {
+	animation: o 3s infinite;
+}
+
+@keyframes wOrD {
+	0% {
+		font-size: 16px;
+	}
+	50% {
+		font-size: 18px;
+	}
+	100% {
+		font-size: 16px;
+	}
+}
+
+h3 {
+	animation: wOrD 3s infinite;
+}
